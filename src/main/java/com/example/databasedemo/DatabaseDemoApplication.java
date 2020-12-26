@@ -9,7 +9,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.example.databasedemo.jdbc.PersonRepository;
-import com.example.databasedemo.entity.Person2;
+import com.example.databasedemo.entity.Persons;
 import com.example.databasedemo.jdbc.PersonJdbcDao;
 
 @SpringBootApplication
@@ -26,8 +26,8 @@ public class DatabaseDemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 	logger.info("JPA DEMO FIND ---->{}"+repository.findById(10001));
-	logger.info("JPA DEMO INSERT ---->{}"+repository.insert(new Person2(10004,"Lizz","NY",new Date())));
-	logger.info("JPA DEMO UPDATE ---->{}"+repository.update(new Person2(10003,"Ayushman Dash","NY",new Date())));
+	logger.info("JPA DEMO INSERT ---->{}"+repository.insert(new Persons(10004,"Lizz","NY",new Date())));
+	logger.info("JPA DEMO UPDATE ---->{}"+repository.update(new Persons(10003,"Ayushman Dash","NY",new Date())));
 		
 	}
 

@@ -7,8 +7,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.NamedQuery;
 @Entity
-@NamedQuery(name="find-all-person", query = "select p from Person2 p")
-public class Person2 {
+@NamedQuery(name="find-all-person", query = "select p from Persons p")
+public class Persons {
 	@Id
 	@GeneratedValue
 	private int id;
@@ -16,10 +16,10 @@ public class Person2 {
 	private String location;
 	private Date birthDate;
 	
-	public Person2() {
+	public Persons() {
 		
 	}
-	public Person2(int id,String name, String location, Date birthDate) {
+	public Persons(int id,String name, String location, Date birthDate) {
 		super();
 		this.id=id;
 		this.name = name;

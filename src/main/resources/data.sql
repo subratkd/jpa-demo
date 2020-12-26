@@ -7,6 +7,6 @@ birth_date timestamp,
 primary key(id)
 );
 */
-insert into Person2(id,name,location,birth_date)
+insert into Persons(id,name,location,birth_date)
 values
 (1001,'Subrat Dash','plano',sysdate());

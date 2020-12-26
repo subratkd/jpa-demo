@@ -27,7 +27,10 @@ public class DatabaseDemoApplicationJpa implements CommandLineRunner {
 	//logger.info("All User ---->{}"+dao.updateById(10003,"Rama Ch Dash"));
 	//logger.info("Add one  User ---->{}"+dao.insert(new Person(1004, "Alex", "Germany", new Date())));
 	// logger.info("All Persons ---->{}"+repository.findById(10001));
-		logger.info("All User ---->{}"+repository.findAll());
+	repository.deleteById(1001);
+
+	// logger.info("All User ---->{}"+repository.findAll());
+		
 		
 	}
 
